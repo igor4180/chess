@@ -1,19 +1,19 @@
-#include <iostream>
+п»ї#include <iostream>
 using namespace std;
-//#define доска
-//#define Шахматная доска
-//#define Шахматы
+//#define РґРѕСЃРєР°
+//#define РЁР°С…РјР°С‚РЅР°СЏ РґРѕСЃРєР°
+//#define РЁР°С…РјР°С‚С‹
 void main()
 {
     setlocale (LC_ALL, "Rus");
-#ifdef доска
+#ifdef РґРѕСЃРєР°
     const char WHITE = '#';
     const char BLACK = ' ';
     int x, y, w;
-    cout << "Введите размер : ";
+    cout << "Р’РІРµРґРёС‚Рµ СЂР°Р·РјРµСЂ : ";
     cin >> x;
     y = x;
-    cout << "Введите ширину : ";
+    cout << "Р’РІРµРґРёС‚Рµ С€РёСЂРёРЅСѓ : ";
     cin >> w;
 
     int c, z, r;
@@ -27,9 +27,9 @@ void main()
         }
     }
 #endif
-#ifdef Шахматная доска
+#ifdef РЁР°С…РјР°С‚РЅР°СЏ РґРѕСЃРєР°
 	{
-		cout << "Размер= ";
+		cout << "Р Р°Р·РјРµСЂ= ";
 		int a, k = 1, p = 1, v = 0; cin >> a;
 		while (k <= a) {
 			for (int r = 0; r < 4; r++) {
@@ -81,7 +81,7 @@ void main()
 		}
 	}
 #endif
-#ifdef Шахматы
+#ifdef РЁР°С…РјР°С‚С‹
 	{
 		const char WHITE = '#';
 		const char BLACK = ' ';
